@@ -67,13 +67,11 @@ int main(){
         cout << "CEO Name: ";
         cin >> ceo;
 
-        companies[i] = new DiamondCompany(id, name, staff, revenue, importD, exportD, ceo);
+         DiamondCompany d(id, name, staff, revenue, importD, exportD, ceo);
+         d.display();
     }
 
-    cout << "\nDisplay All Companies";
-    for(int i = 0; i < n; i++) {
-        companies[i]->display();
-    }
+
 
     return 0;
 }
